@@ -37,7 +37,114 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <p>Hello, world!</p>
+    <header class="l-header">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo">
+          <a href="#">
+            <img
+              src="./assets/img/site-logo.svg"
+              alt="みなみ歯科クリニック"
+              width="270"
+              height="32"
+            />
+          </a>
+        </h1>
+
+        <div class="l-header__right">
+          <!-- ナビゲーション(PC) -->
+          <div class="l-header__nav u-desktop">
+            <nav class="p-header-nav">
+              <ul class="p-header-nav__list">
+                <li class="p-header-nav__item">
+                  <a href="#">
+                    <img
+                      src="./assets/img/icon-home.svg"
+                      alt="ホーム"
+                      width="24"
+                      height="24"
+                    /><span>ホーム</span></a
+                  >
+                </li>
+                <li class="p-header-nav__item">
+                  <a href="#">
+                    <img
+                      src="./assets/img/icon-about.svg"
+                      alt="当院について"
+                      width="24"
+                      height="24"
+                    />
+                    <span>当院について</span></a
+                  >
+                </li>
+                <li class="p-header-nav__item">
+                  <a href="#">
+                    <img
+                      src="./assets/img/icon-medical.svg"
+                      alt="診療案内"
+                      width="24"
+                      height="24"
+                    />
+                    <span>診療案内</span></a
+                  >
+                </li>
+                <li class="p-header-nav__item">
+                  <a href="#">
+                    <img
+                      src="./assets/img/icon-staff.svg"
+                      alt="スタッフ紹介"
+                      width="24"
+                      height="24"
+                    />
+                    <span>スタッフ紹介</span></a
+                  >
+                </li>
+                <li class="p-header-nav__item">
+                  <a href="#">
+                    <img
+                      src="./assets/img/icon-blog.svg"
+                      alt="スタッフブログ"
+                      width="24"
+                      height="24"
+                    />
+                    <span>スタッフブログ</span></a
+                  >
+                </li>
+                <li class="p-header-nav__item">
+                  <a href="#">
+                    <img
+                      src="./assets/img/icon-contact.svg"
+                      alt="お問い合わせ"
+                      width="24"
+                      height="24"
+                    />
+                    <span>お問い合わせ</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- 電話番号 -->
+          <div class="l-header-tel p-header-tel">
+            <div class="p-header-tel__text">
+              〒166-0001 東京都杉並区阿佐谷北7-3-1
+            </div>
+            <div class="p-header-tel__number">03-1234-5678</div>
+          </div>
+        </div>
+
+        <!-- ハンバーガーメニュー(スマホ) -->
+        <button
+          class="c-hamburger u-mobile"
+          type="button"
+          aria-label="メニュー開閉"
+        >
+          <span class="c-hamburger__line"></span>
+          <span class="c-hamburger__line"></span>
+          <span class="c-hamburger__line"></span>
+        </button>
+      </div>
+    </header>
     <script defer src="../assets/js/script.js"></script>
   </body>
 </html>
