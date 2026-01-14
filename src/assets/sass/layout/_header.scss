@@ -1,0 +1,17 @@
+@use "../global/" as g;
+
+.l-header {
+  height: g.$header-height-sp;
+  padding: 14px 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.l-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-header__logo {
+  width: 270px;
+}

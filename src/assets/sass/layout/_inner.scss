@@ -1,0 +1,7 @@
+@use "../global/" as g;
+
+.l-inner {
+  padding-inline: 20px;
+  max-width: g.$width-inner; //1000px
+  margin-inline: auto;
+}

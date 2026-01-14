@@ -89,3 +89,56 @@ body {
 	line-height: 1.7;
 }
 
+.l-header {
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	height: 60px;
+	padding: 14px 20px;
+}
+
+.l-header__inner {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.l-header__logo {
+	width: 270px;
+}
+
+.l-inner {
+	margin-inline: auto;
+	max-width: 1000px;
+	padding-inline: 20px;
+}
+
+.c-hamburger {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: flex;
+	flex-direction: column;
+	height: 32px;
+	justify-content: space-between;
+	padding: 8px 2px 8px 3px;
+	width: 32px;
+}
+
+.c-hamburger__line {
+	background-color: #1391e6;
+	border-radius: 2px;
+	height: 2px;
+	width: 100%;
+}
+
+.u-hidden-sp {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+.u-hidden-pc {
+	display: none;
+}
+
+}
+
