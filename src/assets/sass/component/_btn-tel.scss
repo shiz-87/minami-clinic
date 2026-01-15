@@ -1,13 +1,18 @@
 @use "../global/" as g;
 
-.p-header-tel__number {
+.c-btn-tel {
   display: flex;
   align-items: center;
   gap: 4px;
 
   img {
-    width: 28px;
-    height: 28px;
+    width: 18px;
+    height: 18px;
+
+    @include g.mq(xl) {
+      width: 28px;
+      height: 28px;
+    }
   }
 
   span {
