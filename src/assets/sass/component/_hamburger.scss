@@ -2,18 +2,51 @@
 
 .c-hamburger {
   appearance: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 300;
   width: 32px;
   height: 32px;
-  padding: 8px 2px 8px 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
+  position: relative;
+
+  &.is-active .c-hamburger__line {
+    background-color: g.$color-white;
+
+    &:nth-child(1) {
+      top: 15px;
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      top: 15px;
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .c-hamburger__line {
-  width: 100%;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 27px;
   height: 2px;
+  margin-left: 3px;
   background-color: g.$color-main;
   border-radius: 2px;
-}
+  transition: opacity 0.3s ease, transform 0.3s ease, top 0.3s ease,
+    color 0.3s ease;
 
+  &:nth-child(2) {
+    top: 15px;
+  }
+
+  &:nth-child(3) {
+    top: 22px;
+  }
+}

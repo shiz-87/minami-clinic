@@ -5,11 +5,48 @@
   gap: 24px;
 }
 
+.p-header-nav__item {
+  &.current-menu-item {
+    .p-header-nav__link {
+      color: g.$color-main;
+
+      &::after {
+        transform: translateX(-50%) scaleX(1);
+      }
+    }
+  }
+
+  &:hover {
+    .p-header-nav__link {
+      color: g.$color-main;
+
+      &::after {
+        transform: translateX(-50%) scaleX(1);
+      }
+    }
+  }
+}
+
 .p-header-nav__link {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 7px;
+  transition: color 0.3s ease;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: g.$color-main;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
 }
 
 .p-header-nav__icon {

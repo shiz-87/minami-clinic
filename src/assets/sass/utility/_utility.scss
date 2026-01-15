@@ -13,3 +13,9 @@
     display: none;
   }
 }
+
+/* スクロール禁止用クラス */
+.u-noscroll {
+  overflow: hidden;
+  height: 100dvh;
+}
