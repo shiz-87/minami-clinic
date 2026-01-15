@@ -1,0 +1,28 @@
+@use "../global/" as g;
+
+.p-footer-cta {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid g.$color-main;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  z-index: 100;
+}
+
+.p-footer-cta__inner {
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 60px;
+}
+
+.p-footer-cta__time {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+}

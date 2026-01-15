@@ -1,0 +1,42 @@
+@use "../global/" as g;
+
+.c-btn-cta-web {
+  padding: 8px 18px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  background: g.$color-main;
+  border-radius: 8px;
+
+  img {
+    width: 46px;
+    height: 28px;
+
+    @media (width <= 368px) {
+      width: 34px;
+      height: auto;
+    }
+  }
+}
+
+.c-btn-cta-web__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  color: g.$color-white;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.c-btn-cta-web__main {
+  font-size: 16px;
+
+  @media (width <= 368px) {
+    font-size: 13px;
+  }
+}
+
+.c-btn-cta-web__sub {
+  font-size: 12px;
+}
