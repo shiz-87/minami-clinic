@@ -13,21 +13,3 @@
   line-height: 1.5;
 }
 
-.p-header-tel__number {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-
-  img {
-    width: 28px;
-    height: 28px;
-  }
-
-  span {
-    color: g.$color-main;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: -0.64px;
-  }
-}
