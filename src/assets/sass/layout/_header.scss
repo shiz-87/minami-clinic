@@ -4,14 +4,28 @@
   height: g.$header-height-sp;
   padding: 14px 20px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+  @include g.mq(xl) {
+    height: g.$header-height-pc;
+    padding: 8px 40px;
+  }
 }
 
 .l-header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .l-header__logo {
   width: 270px;
 }
+
+.l-header__right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+
