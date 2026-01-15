@@ -1,0 +1,170 @@
+@use "../global/" as g;
+
+.p-top-fv {
+  padding-block: 15px 60px;
+
+  @include g.mq(xl) {
+    padding-top: 40px;
+  }
+}
+
+.p-top-fv__inner {
+  padding-inline: 20px;
+
+  @include g.mq(md) {
+    padding-inline: 40px;
+  }
+}
+
+.p-top-fv__container {
+  position: relative;
+
+  @include g.mq(xl) {
+    max-width: 1160px;
+    margin-inline: auto;
+  }
+}
+
+.p-top-fv__copy {
+  position: absolute;
+  bottom: 34px;
+  left: 20px;
+  z-index: 10;
+
+  @include g.mq(xl) {
+    bottom: 56px;
+    left: 62px;
+  }
+}
+
+.p-top-fv__image {
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  @include g.mq(xl) {
+    border-radius: 18px;
+  }
+
+  picture {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-top-fv__button-prev,
+.p-top-fv__button-next {
+  width: 32px;
+  height: 32px;
+
+  @include g.mq(xl) {
+    width: 48px;
+    height: 48px;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+.p-top-fv__button-prev {
+  background: url("../img/icon-arrow-left-swiper.svg") no-repeat center /
+    contain;
+  left: -16px !important;
+  top: 51% !important;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+  @include g.mq(xl) {
+    top: 49% !important;
+    left: -22px !important;
+  }
+}
+
+.p-top-fv__button-next {
+  background: url("../img/icon-arrow-right-swiper.svg") no-repeat center /
+    contain;
+  right: -17px !important;
+  top: 51% !important;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+  @include g.mq(xl) {
+    top: 49% !important;
+    right: -27px !important;
+  }
+}
+
+.p-top-fv__pagination {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: -12px !important;
+  bottom: 17px !important;
+
+  @include g.mq(xl) {
+    gap: 9px;
+    left: -22px !important;
+    bottom: 6px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 0 !important;
+    background: g.$color-text-sub;
+    opacity: 1;
+    transition: background 0.3s ease;
+
+    @include g.mq(xl) {
+      width: 8px;
+      height: 8px;
+    }
+
+    &.swiper-pagination-bullet-active {
+      background: g.$color-main;
+    }
+  }
+}
+
+.p-top-fv__body {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: -24px;
+  position: relative;
+  z-index: 2;
+  gap: 39px;
+
+  @include g.mq(md) {
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  @include g.mq(lg) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1080px;
+    margin-top: -25px;
+    gap: 60px;
+  }
+}
+
+.p-top-fv__table {
+  text-align: center;
+
+  img {
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+
+    @include g.mq(lg) {
+      max-width: 477px;
+      flex-shrink: 0;
+    }
+  }
+}
+

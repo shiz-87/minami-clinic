@@ -1,0 +1,110 @@
+@use "../global/" as g;
+
+.p-top-news {
+  @include g.mq(lg) {
+    flex: 1;
+  }
+}
+
+.p-top-news__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.p-top-news__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.p-top-news__en {
+  color: g.$color-main;
+  font-size: 11px;
+  letter-spacing: 1.1px;
+
+  @include g.mq(md) {
+    font-size: 12px;
+  }
+}
+
+.p-top-news__archive {
+  color: g.$color-text-sub;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+
+  @include g.mq(lg) {
+    font-size: 12px;
+  }
+}
+
+.p-top-news__item {
+  margin-top: 6px;
+}
+
+.p-top-news__link {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  padding: calc(10px - 1px) 30px calc(10px - 1px) 6px;
+  border-block: 1px solid g.$color-text;
+  position: relative;
+
+  @include g.mq(lg) {
+    padding: calc(10px - 1px) 32px calc(10px - 1px) 9px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: url("../img/icon-arrow-right-news.svg") no-repeat center /
+      contain;
+    transition: transform 0.3s, background 0.3s;
+
+    @include g.mq(lg) {
+      right: 9px;
+    }
+  }
+
+  &:hover {
+    color: g.$color-main;
+
+    &::after {
+      transform: translateY(-50%) translateX(5px);
+      background: url("../img/icon-arrow-right-news-blue.svg") no-repeat center /
+        contain;
+    }
+  }
+}
+
+.p-top-news__meta {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 69px;
+  transition: color 0.3s;
+}
+
+.p-top-news__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: color 0.3s;
+}

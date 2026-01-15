@@ -34,6 +34,7 @@
     />
 
     <!-- スタイルシート -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -373,6 +374,146 @@
     </div>
     <!-- /ドロワーメニュー -->
 
+    <main class="l-main">
+      <!-- メインビジュアル -->
+      <div class="p-top-fv">
+        <div class="p-top-fv__inner">
+          <!-- Swiper -->
+          <div class="p-top-fv__container">
+            <picture class="p-top-fv__copy">
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/img/top-fv-copy.svg"
+                type="image/svg+xml"
+                width="422"
+                height="119"
+              />
+              <img
+                src="./assets/img/sp/top-fv-copy.svg"
+                alt="街の皆さまの笑顔を守るアットホームな歯医者さん"
+                decoding="async"
+                width="268"
+                height="81"
+              />
+            </picture>
+            <div class="swiper p-top-fv__swiper">
+              <div class="swiper-wrapper p-top-fv__wrapper">
+                <!-- スライド1枚目 -->
+                <div class="swiper-slide p-top-fv__slide">
+                  <div class="p-top-fv__image">
+                    <picture class="p-top-fv__picture">
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./assets/img/top-fv-01.webp"
+                        width="2320"
+                        height="1040"
+                      />
+                      <img
+                        src="./assets/img/sp/top-fv-01.webp"
+                        alt="院内の様子1"
+                        decoding="async"
+                        width="670"
+                        height="894"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <!-- スライド2枚目 -->
+                <div class="swiper-slide p-top-fv__slide">
+                  <div class="p-top-fv__image">
+                    <picture class="p-top-fv__picture">
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./assets/img/top-fv-02.webp"
+                        width="2320"
+                        height="1040"
+                      />
+                      <img
+                        src="./assets/img/sp/top-fv-02.webp"
+                        alt="院内の様子2"
+                        decoding="async"
+                        width="670"
+                        height="894"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <!-- スライド3枚目 -->
+                <div class="swiper-slide p-top-fv__slide">
+                  <div class="p-top-fv__image">
+                    <picture class="p-top-fv__picture">
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./assets/img/top-fv-03.webp"
+                        width="2320"
+                        height="1040"
+                      />
+                      <img
+                        src="./assets/img/sp/top-fv-03.webp"
+                        alt="院内の様子3"
+                        decoding="async"
+                        width="670"
+                        height="894"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ナビゲーションボタン -->
+            <div class="swiper-button-prev p-top-fv__button-prev"></div>
+            <div class="swiper-button-next p-top-fv__button-next"></div>
+
+            <!-- ページネーション -->
+            <div class="swiper-pagination p-top-fv__pagination"></div>
+          </div>
+          <div class="p-top-fv__body">
+            <section class="p-top-fv__news p-top-news">
+              <header class="p-top-news__header">
+                <h2 class="p-top-news__title">
+                  お知らせ <span class="p-top-news__en">NEWS</span>
+                </h2>
+                <a href="" class="p-top-news__archive">
+                  過去のお知らせはこちら
+                </a>
+              </header>
+              <ul class="p-top-news__list">
+                <li class="p-top-news__item">
+                  <a href="#" class="p-top-news__link">
+                    <div class="p-top-news__meta">
+                      <time class="p-top-news__date" datetime="2024-12-10"
+                        >2024.12.10</time
+                      >
+                    </div>
+                    <p class="p-top-news__text">年末年始の営業時間のお知らせ</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <picture class="p-top-fv__table">
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/img/medical-time.png"
+                width="978"
+                height="356"
+              />
+              <img
+                src="./assets/img/sp/medical-time.png"
+                alt="月〜土は午前午後、水曜午後は休診"
+                decoding="async"
+                width="694"
+                height="256"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!-- /メインビジュアル -->
+    </main>
+
     <!-- CTA(SP) -->
     <aside class="p-footer-cta u-hidden-pc">
       <div class="p-footer-cta__inner">
@@ -403,6 +544,7 @@
       </div>
     </aside>
     <!-- /CTA(SP) -->
+    <script defer src="./assets/js/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </body>
 </html>
