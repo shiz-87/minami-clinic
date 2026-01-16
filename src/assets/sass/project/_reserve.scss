@@ -1,0 +1,28 @@
+@use "../global/" as g;
+
+.p-reserve {
+  width: fit-content;
+  padding: 20px 17px;
+  background: g.$color-main;
+  border-radius: 20px 0 0 20px;
+  position: fixed;
+  top: 170px;
+  right: 0;
+  z-index: 10;
+}
+
+.p-reserve__link {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.p-reserve__main,
+.p-reserve__sub {
+  display: block;
+  color: g.$color-white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+}

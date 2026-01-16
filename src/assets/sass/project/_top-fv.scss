@@ -14,15 +14,14 @@
   @include g.mq(md) {
     padding-inline: 40px;
   }
+
+  @include g.mq(xl) {
+    padding-inline: 60px;
+  }
 }
 
 .p-top-fv__container {
   position: relative;
-
-  @include g.mq(xl) {
-    max-width: 1160px;
-    margin-inline: auto;
-  }
 }
 
 .p-top-fv__copy {
@@ -167,4 +166,3 @@
     }
   }
 }
-
