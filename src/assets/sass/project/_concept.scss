@@ -1,0 +1,124 @@
+@use "../global/" as g;
+
+.p-concept {
+  padding-top: 110px;
+  position: relative;
+  overflow: hidden;
+
+  @include g.mq(md) {
+    padding-block: 180px 108px;
+  }
+}
+
+.p-concept__decoration {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  z-index: -1;
+  width: 148%;
+
+  @include g.mq(md) {
+    left: 35%;
+    width: 102%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-concept__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+
+  @include g.mq(md) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: calc(93 / 1280) * 100%;
+  }
+}
+
+.p-concept__content {
+  padding-inline: 20px;
+
+  @include g.mq(md) {
+    width: calc(407 / 1280 * 100%);
+    padding-inline: 0;
+  }
+}
+
+.p-concept__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @include g.mq(md) {
+    gap: 24px;
+  }
+}
+
+.p-concept__en {
+  display: block;
+  color: g.$color-main;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+
+  @include g.mq(md) {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+}
+
+.p-concept__ja {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+
+  @include g.mq(md) {
+    font-size: 22px;
+    letter-spacing: 2.24px;
+  }
+
+  @include g.mq(lg) {
+    font-size: 28px;
+  }
+}
+
+.p-concept__text {
+  font-size: 14px;
+  margin-top: 30px;
+
+  @include g.mq(md) {
+    margin-top: 39px;
+  }
+}
+
+.p-concept__button {
+  text-align: center;
+  margin-top: 32px;
+
+  @include g.mq(md) {
+    text-align: left;
+    margin-top: 39px;
+  }
+}
+
+.p-concept__image {
+  text-align-last: left;
+  width: 89%;
+
+  @include g.mq(md) {
+    width: calc(640 / 1280 * 100%);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+  }
+}
