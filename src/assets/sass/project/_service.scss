@@ -4,6 +4,10 @@
   padding-block: 23% 8%;
   position: relative;
 
+  @include g.mq(md) {
+    padding-block: 15.8% 7.4%;
+  }
+
   &::before {
     position: absolute;
     top: 0;
@@ -16,6 +20,7 @@
 
     @include g.mq(md) {
       background: url(../img/top-service-bg-top.svg) no-repeat center / contain;
+      aspect-ratio: 1280 / 203;
     }
   }
 
@@ -29,12 +34,22 @@
     content: "";
     background: url(../img/sp/top-service-bg-bottom.svg) no-repeat center /
       contain;
+
+    @include g.mq(md) {
+      background: url(../img/top-service-bg-bottom.svg) no-repeat center /
+        contain;
+      aspect-ratio: 1280 / 214;
+    }
   }
 }
 
 .p-service__container {
   background: g.$color-main-light;
   padding-block: 32px 62px;
+
+  @include g.mq(md) {
+    padding-block: 0 85px;
+  }
 }
 
 .p-service__inner {
@@ -45,6 +60,12 @@
   flex-direction: column;
   gap: 20px;
   margin-top: 40px;
+
+  @include g.mq(md) {
+    flex-direction: row;
+    gap: calc(80 / 1000 * 100%);
+    margin-top: 60px;
+  }
 }
 
 .p-service-item {
@@ -54,6 +75,11 @@
   display: grid;
   place-items: center;
   position: relative;
+
+  @include g.mq(md) {
+    flex: 1;
+    min-height: 290px;
+  }
 
   &::after {
     content: "";
@@ -94,6 +120,11 @@
   line-height: 1.5;
   letter-spacing: 1.6px;
 
+  @include g.mq(md) {
+    font-size: 28px;
+    letter-spacing: 2.24px;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -101,6 +132,10 @@
     height: 2px;
     background-color: g.$color-white;
     margin: 20px auto 0;
+
+    @include g.mq(md) {
+      width: 40px;
+    }
   }
 }
 
@@ -111,6 +146,11 @@
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.96px;
+
+  @include g.mq(md) {
+    font-size: 16px;
+    letter-spacing: 1.28px;
+  }
 }
 
 .p-service__text {
@@ -118,4 +158,9 @@
   margin-top: 40px;
   padding: 17px 20px;
   background: g.$color-white;
+
+  @include g.mq(md) {
+    padding: 36px 40px;
+    margin-top: 60px;
+  }
 }

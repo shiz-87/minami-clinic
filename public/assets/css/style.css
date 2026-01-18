@@ -1014,8 +1014,52 @@ body {
 	flex: 1;
 }
 
+.p-service {
+	padding-block: 15.8% 7.4%;
+}
+
 .p-service::before {
+	aspect-ratio: 1280/203;
 	background: url(../img/top-service-bg-top.svg) no-repeat center/contain;
+}
+
+.p-service::after {
+	aspect-ratio: 1280/214;
+	background: url(../img/top-service-bg-bottom.svg) no-repeat center/contain;
+}
+
+.p-service__container {
+	padding-block: 0 85px;
+}
+
+.p-service__list {
+	flex-direction: row;
+	gap: 8%;
+	margin-top: 60px;
+}
+
+.p-service-item {
+	flex: 1;
+	min-height: 290px;
+}
+
+.p-service-item__title {
+	font-size: 28px;
+	letter-spacing: 2.24px;
+}
+
+.p-service-item__title::after {
+	width: 40px;
+}
+
+.p-service-item__text {
+	font-size: 16px;
+	letter-spacing: 1.28px;
+}
+
+.p-service__text {
+	margin-top: 60px;
+	padding: 36px 40px;
 }
 
 }
