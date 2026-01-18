@@ -810,6 +810,8 @@ body {
 
 .p-service-item {
 	border-radius: 20px;
+	display: flex;
+	justify-content: center;
 	min-height: 210px;
 	overflow: hidden;
 	position: relative;
@@ -858,7 +860,6 @@ body {
 
 .p-service-item__link {
 	display: block;
-	height: 100%;
 	padding: 10px;
 	position: relative;
 	width: 100%;
