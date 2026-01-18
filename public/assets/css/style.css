@@ -769,8 +769,115 @@ body {
 	margin-top: 22px;
 }
 
-.p-recommend-item__text span {
-	color: #ee5a6d;
+.p-service {
+	padding-block: 23% 8%;
+	position: relative;
+}
+
+.p-service::before {
+	aspect-ratio: 375/88;
+	background: url(../img/sp/top-service-bg-top.svg) no-repeat center/contain;
+	content: "";
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.p-service::after {
+	aspect-ratio: 375/88;
+	background: url(../img/sp/top-service-bg-bottom.svg) no-repeat center/contain;
+	bottom: 0;
+	content: "";
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.p-service__container {
+	background: #dff1fd;
+	padding-block: 32px 62px;
+}
+
+.p-service__list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: 40px;
+}
+
+.p-service-item {
+	border-radius: 20px;
+	display: grid;
+	min-height: 210px;
+	overflow: hidden;
+	place-items: center;
+	position: relative;
+}
+
+.p-service-item::after {
+	background-color: rgba(0, 0, 0, 0.2);
+	content: "";
+	inset: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 1;
+}
+
+.p-service-item:nth-of-type(1) {
+	background: url(../img/sp/top-service-img-01.png) no-repeat center center/cover;
+}
+
+.p-service-item:nth-of-type(2) {
+	background: url(../img/sp/top-service-img-02.png) no-repeat center center/cover;
+}
+
+.p-service-item__link {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: 100%;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+
+.p-service-item__title {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1.6px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.p-service-item__title::after {
+	background-color: #ffffff;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 20px auto 0;
+	width: 30px;
+}
+
+.p-service-item__text {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.96px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.p-service__text {
+	background: #ffffff;
+	font-size: 14px;
+	margin-top: 40px;
+	padding: 17px 20px;
 }
 
 .u-hidden-sp {
@@ -782,6 +889,10 @@ body {
 .u-noscroll {
 	height: 100dvh;
 	overflow: hidden;
+}
+
+.u-color-accent {
+	color: #ee5a6d;
 }
 
 @media (width <= 368px) {
@@ -901,6 +1012,10 @@ body {
 
 .p-recommend-item {
 	flex: 1;
+}
+
+.p-service::before {
+	background: url(../img/top-service-bg-top.svg) no-repeat center/contain;
 }
 
 }
