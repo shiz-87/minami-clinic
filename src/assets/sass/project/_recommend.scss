@@ -20,7 +20,7 @@
     flex-direction: row;
     gap: auto;
     margin-top: 60px;
-    gap: 65px;
+    gap: calc(65 / 1000 * 100%);
   }
 }
 

@@ -894,7 +894,7 @@ body {
 .p-recommend__list {
 	flex-direction: row;
 	gap: auto;
-	gap: 65px;
+	gap: 6.5%;
 	margin-top: 60px;
 	padding-inline: 0;
 }
