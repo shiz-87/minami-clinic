@@ -845,10 +845,6 @@ body {
 	right: 9px;
 }
 
-.p-concept__ja {
-	font-size: 28px;
-}
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -910,6 +906,10 @@ body {
 .p-top-fv__pagination .swiper-pagination-bullet {
 	height: 8px;
 	width: 8px;
+}
+
+.p-concept__ja {
+	font-size: 28px;
 }
 
 .u-hidden-sp {

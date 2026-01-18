@@ -85,7 +85,7 @@
     letter-spacing: 2.24px;
   }
 
-  @include g.mq(lg) {
+  @include g.mq(xl) {
     font-size: 28px;
   }
 }
