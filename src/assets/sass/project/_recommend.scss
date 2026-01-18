@@ -1,0 +1,44 @@
+@use "../global/" as g;
+
+.p-recommend {
+  padding-block: 100px;
+}
+
+.p-recommend__list {
+  padding-inline: 22px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+}
+
+.p-recommend-item {
+}
+
+.p-recommend-item__title {
+  width: 182px;
+  margin-inline: auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-recommend-item__image {
+  max-width: 290px;
+  margin-inline: auto;
+  margin-top: 15px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-recommend-item__text {
+  font-size: 14px;
+  margin-top: 22px;
+
+  span {
+    color: g.$color-accent;
+  }
+}

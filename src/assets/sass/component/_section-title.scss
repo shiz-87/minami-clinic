@@ -1,0 +1,32 @@
+@use "../global/" as g;
+
+.c-section-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  @include g.mq(md) {
+    font-size: 28px;
+    letter-spacing: 2.24px;
+    gap: 28px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 49px;
+    height: 15px;
+    background: url(../img/section-title-deco.svg) no-repeat center / contain;
+
+    @include g.mq(md) {
+      width: 67px;
+      height: 20px;
+    }
+  }
+}
