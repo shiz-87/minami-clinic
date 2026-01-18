@@ -113,8 +113,6 @@ body {
 }
 
 .l-inner {
-	margin-inline: auto;
-	max-width: 1000px;
 	padding-inline: 20px;
 }
 
@@ -810,6 +808,12 @@ body {
 
 @media screen and (min-width: 768px) {
 
+.l-inner {
+	margin-inline: auto;
+	max-width: 1080px;
+	padding-inline: 40px;
+}
+
 .c-section-title {
 	font-size: 28px;
 	gap: 28px;
@@ -881,6 +885,22 @@ body {
 
 .p-concept__image {
 	width: 50%;
+}
+
+.p-recommend {
+	padding-block: 120px;
+}
+
+.p-recommend__list {
+	flex-direction: row;
+	gap: auto;
+	gap: 65px;
+	margin-top: 60px;
+	padding-inline: 0;
+}
+
+.p-recommend-item {
+	flex: 1;
 }
 
 }

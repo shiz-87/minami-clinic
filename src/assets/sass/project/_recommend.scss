@@ -2,6 +2,10 @@
 
 .p-recommend {
   padding-block: 100px;
+
+  @include g.mq(md) {
+    padding-block: 120px;
+  }
 }
 
 .p-recommend__list {
@@ -10,9 +14,20 @@
   display: flex;
   flex-direction: column;
   gap: 61px;
+
+  @include g.mq(md) {
+    padding-inline: 0;
+    flex-direction: row;
+    gap: auto;
+    margin-top: 60px;
+    gap: 65px;
+  }
 }
 
 .p-recommend-item {
+  @include g.mq(md) {
+    flex: 1;
+  }
 }
 
 .p-recommend-item__title {

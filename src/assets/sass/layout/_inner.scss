@@ -2,6 +2,10 @@
 
 .l-inner {
   padding-inline: 20px;
-  max-width: g.$width-inner; //1000px
-  margin-inline: auto;
+
+  @include g.mq(md) {
+    padding-inline: 40px;
+    max-width: calc(g.$width-inner + 40px * 2);
+    margin-inline: auto;
+  }
 }
