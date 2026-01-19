@@ -1,0 +1,46 @@
+@use "../global/" as g;
+
+.p-blog {
+  padding-block: 100px;
+
+  @include g.mq(md) {
+    padding-block: 120px;
+  }
+}
+
+.p-blog__list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include g.mq(md) {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 50px;
+  }
+
+  @include g.mq(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p-blog__item {
+  @include g.mq(md) {
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: g.$color-white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  }
+}
+
+.p-blog__button {
+  text-align: center;
+  margin-top: 40px;
+
+  @include g.mq(md) {
+    margin-top: 62px;
+  }
+}

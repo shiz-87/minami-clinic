@@ -913,6 +913,69 @@ body {
 	padding: 17px 20px;
 }
 
+.p-blog {
+	padding-block: 100px;
+}
+
+.p-blog__list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: 40px;
+}
+
+.p-blog__button {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.p-blog-card__link {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+}
+
+.p-blog-card__thumbnail {
+	flex-shrink: 0;
+	width: 39.7014925373%;
+}
+
+.p-blog-card__body {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.p-blog-card__label {
+	background: #1391e6;
+	border-radius: 999px;
+	color: #ffffff;
+	font-size: 10px;
+	line-height: 1.5;
+	padding: 2px 8px;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.p-blog-card__title {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	font-size: 14px;
+	line-clamp: 2;
+	line-height: 1.5;
+	margin-top: 6px;
+	overflow: hidden;
+}
+
+.p-blog-card__date {
+	color: #888888;
+	display: block;
+	font-size: 11px;
+	line-height: 1.5;
+	margin-top: 6px;
+}
+
 .u-hidden-sp {
 	display: none;
 }
@@ -1095,6 +1158,63 @@ body {
 	padding: 36px 40px;
 }
 
+.p-blog {
+	padding-block: 120px;
+}
+
+.p-blog__list {
+	display: grid;
+	gap: 60px 50px;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 60px;
+}
+
+.p-blog__item {
+	background: #ffffff;
+	border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	overflow: hidden;
+}
+
+.p-blog__button {
+	margin-top: 62px;
+}
+
+.p-blog-card__link {
+	flex-direction: column;
+	gap: 0;
+}
+
+.p-blog-card__thumbnail {
+	width: auto;
+}
+
+.p-blog-card__body {
+	min-height: 129px;
+	padding: 18px 24px 10px;
+	position: relative;
+	width: 100%;
+}
+
+.p-blog-card__label {
+	font-size: 11px;
+	left: 24px;
+	padding: 6px 12px;
+	position: absolute;
+	top: -12px;
+}
+
+.p-blog-card__title {
+	font-size: 16px;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+}
+
+.p-blog-card__date {
+	margin-top: auto;
+}
+
 }
 
 @media screen and (min-width: 992px) {
@@ -1194,6 +1314,10 @@ body {
 
 .p-concept__ja {
 	font-size: 28px;
+}
+
+.p-blog__list {
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .u-hidden-sp {
