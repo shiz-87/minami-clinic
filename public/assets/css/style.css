@@ -929,6 +929,14 @@ body {
 	text-align: center;
 }
 
+.p-blog-card:hover .p-blog-card__title {
+	color: #1391e6;
+}
+
+.p-blog-card:hover .p-blog-card__thumbnail img {
+	transform: scale(1.1);
+}
+
 .p-blog-card__link {
 	align-items: center;
 	display: flex;
@@ -937,7 +945,13 @@ body {
 
 .p-blog-card__thumbnail {
 	flex-shrink: 0;
+	overflow: hidden;
 	width: 39.7014925373%;
+}
+
+.p-blog-card__thumbnail img {
+	transition: transform 0.3s;
+	width: 100%;
 }
 
 .p-blog-card__body {
@@ -966,6 +980,7 @@ body {
 	line-height: 1.5;
 	margin-top: 6px;
 	overflow: hidden;
+	transition: color 0.3s;
 }
 
 .p-blog-card__date {
