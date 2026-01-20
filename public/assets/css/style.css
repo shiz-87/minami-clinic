@@ -313,6 +313,11 @@ body {
 .c-btn-footer--web {
 	background-color: #1391e6;
 	color: #ffffff;
+	transition: background 0.3s;
+}
+
+.c-btn-footer--web:hover {
+	background: #0060a0;
 }
 
 .c-btn-footer--web img {
@@ -320,23 +325,21 @@ body {
 	width: 17px;
 }
 
-.c-btn-footer--web span {
-	color: #ffffff;
-}
-
 .c-btn-footer--contact {
 	background-color: #ffffff;
 	border: 1px solid currentColor;
 	color: #1391e6;
+	transition: background 0.3s, color 0.3s;
+}
+
+.c-btn-footer--contact:hover {
+	background: #1391e6;
+	color: #ffffff;
 }
 
 .c-btn-footer--contact svg {
 	height: 17px;
 	width: 17px;
-}
-
-.c-btn-footer--contact span {
-	color: #1391e6;
 }
 
 .p-header-nav__list {
