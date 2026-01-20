@@ -17,6 +17,6 @@
     32px;
 
   @include g.mq(md) {
-    left: -43px;
+    background-position: calc(50% - 40px) bottom;
   }
 }

@@ -1281,7 +1281,7 @@ body {
 }
 
 .l-footer {
-	padding-block: 56px 0;
+	padding-block: 56px 60px;
 }
 
 .l-footer__inner {
@@ -1507,10 +1507,6 @@ body {
 	margin-top: 6px;
 }
 
-.p-footer-access__tel {
-	margin-top: 20px;
-}
-
 .p-footer-access__table {
 	margin-top: 18px;
 }
@@ -1525,7 +1521,7 @@ body {
 }
 
 .p-footer-top-deco::before {
-	left: -43px;
+	background-position: calc(50% - 40px) bottom;
 }
 
 .p-footer-nav {
@@ -1579,7 +1575,7 @@ body {
 	gap: 40px;
 	margin-inline: auto;
 	max-width: 1000px;
-	padding: 39px 49px;
+	padding: 40px 50px;
 }
 
 .p-footer-access__info {
@@ -1607,6 +1603,10 @@ body {
 .l-header {
 	height: 80px;
 	padding: 8px 40px;
+}
+
+.l-footer {
+	padding-bottom: 0;
 }
 
 .c-btn-tel img {
