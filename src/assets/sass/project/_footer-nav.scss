@@ -1,0 +1,66 @@
+@use "../global/" as g;
+
+.p-footer-nav {
+  margin-top: 42px;
+  padding-inline: 10px;
+}
+
+.p-footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.p-footer-nav__item > a:hover {
+  opacity: 0.7;
+}
+
+.p-footer-nav__item:nth-of-type(4) {
+  .p-footer-nav__sub {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 18px 20px;
+  }
+}
+
+.p-footer-nav__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  transition: opacity 0.3s;
+}
+
+.p-footer-nav__sub {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 17px;
+
+  a {
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 12px;
+      background: url(../img/icon-arrow-right-triangle.svg) no-repeat center
+        center / contain;
+    }
+  }
+}
+
+.p-footer-nav__sub-item {
+  transition: opacity 0.3s;
+
+  & > a:hover {
+    opacity: 0.7;
+  }
+
+  &:nth-child(n + 7) {
+    grid-column: 2; /* 2列目に配置 */
+  }
+}

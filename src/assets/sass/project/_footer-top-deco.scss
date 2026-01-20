@@ -1,0 +1,18 @@
+@use "../global/" as g;
+
+.p-footer-top-deco {
+  height: 32px;
+  position: relative;
+}
+
+.p-footer-top-deco::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/sp/footer-top-deco.svg) repeat-x center bottom / 84px
+    32px;
+}

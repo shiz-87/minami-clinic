@@ -1,6 +1,6 @@
 @use "../global/" as g;
 
-.c-button {
+.c-btn {
   display: inline-block;
   color: g.$color-main;
   padding: calc(9px - 1px) calc(46px - 1px);
@@ -8,7 +8,9 @@
   border: 1px solid g.$color-main;
   background: g.$color-white;
   position: relative;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
   font-size: 14px;
   font-weight: 500;
 
@@ -23,7 +25,9 @@
     right: 11px;
     background: url("../img/icon-arrow-right-blue.svg") no-repeat center /
       contain;
-    transition: transform 0.3s, background 0.3s;
+    transition:
+      transform 0.3s,
+      background 0.3s;
   }
 
   &:hover {

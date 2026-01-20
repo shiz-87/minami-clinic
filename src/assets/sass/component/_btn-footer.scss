@@ -1,0 +1,43 @@
+@use "../global/" as g;
+
+.c-btn-footer {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 6px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 150px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  &--web {
+    background-color: g.$color-main;
+    color: g.$color-white;
+
+    img {
+      width: 17px;
+      height: 17px;
+    }
+
+    span {
+      color: g.$color-white;
+    }
+  }
+
+  &--contact {
+    background-color: g.$color-white;
+    color: g.$color-main;
+    border: 1px solid currentColor;
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    span {
+      color: g.$color-main;
+    }
+  }
+}

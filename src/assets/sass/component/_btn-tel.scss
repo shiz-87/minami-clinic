@@ -36,3 +36,26 @@
     }
   }
 }
+
+.c-btn-tel--large {
+  justify-content: center;
+
+  img {
+    width: 28px;
+    height: 28px;
+
+    @media (width <= 368px) {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  span {
+    font-size: 32px;
+    letter-spacing: -0.64px;
+
+    @media (width <= 368px) {
+      font-size: 28px;
+    }
+  }
+}
