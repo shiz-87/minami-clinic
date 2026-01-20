@@ -3,6 +3,10 @@
 .l-footer {
   background: g.$color-main-light;
   padding-block: 13px 60px;
+
+  @include g.mq(md) {
+    padding-block: 56px 0;
+  }
 }
 
 .l-footer__inner {

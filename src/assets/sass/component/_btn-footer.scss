@@ -12,6 +12,12 @@
   font-size: 14px;
   line-height: 1.5;
 
+  @include g.mq(md) {
+    padding: 16px 10px;
+    max-width: 220px;
+    font-size: 16px;
+  }
+
   &--web {
     background-color: g.$color-main;
     color: g.$color-white;
@@ -19,6 +25,11 @@
     img {
       width: 17px;
       height: 17px;
+
+      @include g.mq(md) {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     span {
@@ -34,6 +45,11 @@
     svg {
       width: 17px;
       height: 17px;
+
+      @include g.mq(md) {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     span {

@@ -6,6 +6,11 @@
   background: g.$color-main;
   margin-top: 59px;
 
+  @include g.mq(md) {
+    margin-top: 56px;
+    padding-block: 16px;
+  }
+
   small {
     color: g.$color-white;
     font-size: 14px;
