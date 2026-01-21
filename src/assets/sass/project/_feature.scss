@@ -2,6 +2,10 @@
 
 .p-feature {
   padding-top: 60px;
+
+  @include g.mq(md) {
+    padding-top: 80px;
+  }
 }
 
 .p-feature__inner {
@@ -11,6 +15,15 @@
   display: flex;
   flex-direction: column;
   gap: 97px;
+
+  @include g.mq(md) {
+    padding-top: 180px;
+  }
+
+  @include g.mq(lg) {
+    padding-top: 180px;
+    gap: 228px;
+  }
 }
 
 .p-feature__decoration {
@@ -20,13 +33,49 @@
   z-index: -1;
   width: 148%;
 
+  @include g.mq(md) {
+    left: 35%;
+    width: 102%;
+    top: 62px;
+  }
+
   img {
     width: 100%;
   }
 }
 
+.p-feature__section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include g.mq(md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: calc(93 / 1280 * 100%);
+  }
+
+  &--reverse {
+    @include g.mq(md) {
+      flex-direction: row-reverse;
+      margin-top: 60px;
+    }
+  }
+}
+
 .p-feature__content {
   padding-inline: 20px;
+
+  @include g.mq(md) {
+    width: 44%;
+    padding-inline: 0;
+  }
+
+  @include g.mq(lg) {
+    width: calc(407 / 1280 * 100%);
+    padding-inline: 0;
+  }
 }
 
 .p-feature__en {
@@ -36,6 +85,11 @@
   line-height: 1.5;
   letter-spacing: 1.1px;
   text-transform: uppercase;
+
+  @include g.mq(md) {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
 }
 
 .p-feature__ja {
@@ -44,6 +98,12 @@
   line-height: 1.5;
   letter-spacing: 1.6px;
   margin-top: 11px;
+
+  @include g.mq(md) {
+    font-size: 28px;
+    letter-spacing: 2.24px;
+    margin-top: 24px;
+  }
 }
 
 .p-feature__text {
@@ -52,6 +112,10 @@
 
   &:nth-of-type(1) {
     margin-top: 30px;
+
+    @include g.mq(md) {
+      margin-top: 39px;
+    }
   }
 
   &:nth-of-type(2) {
@@ -61,17 +125,27 @@
 
 .p-feature__image {
   text-align: left;
-  margin-top: 40px;
+  width: 89%;
 
-    &--right {
-        text-align: right;
-    }
+  @include g.mq(md) {
+    width: 42%;
+    margin-top: 0;
+  }
 
-    &--left {
-        text-align: left;
+  @include g.mq(lg) {
+    width: calc(640 / 1280 * 100%);
+    margin-top: 0;
+  }
+
+  &--right {
+    margin-left: auto;
+
+    @include g.mq(md) {
+      margin-left: 0;
     }
+  }
 
   img {
-    width: 89%;
+    width: 100%;
   }
 }
