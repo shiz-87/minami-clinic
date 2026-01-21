@@ -1385,6 +1385,22 @@ body {
 	width: 100%;
 }
 
+.p-gallery {
+	padding-block: 100px;
+}
+
+.p-gallery__list {
+	display: grid;
+	gap: 11px;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 40px;
+}
+
+.p-gallery__item {
+	border-radius: 20px;
+	overflow: hidden;
+}
+
 .u-hidden-sp {
 	display: none;
 }
@@ -1769,6 +1785,16 @@ body {
 
 .p-feature__image--right {
 	margin-left: 0;
+}
+
+.p-gallery {
+	padding-block: 120px 160px;
+}
+
+.p-gallery__list {
+	gap: 24px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 60px;
 }
 
 }
