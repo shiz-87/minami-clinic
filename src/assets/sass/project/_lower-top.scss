@@ -6,6 +6,10 @@
   overflow: hidden;
   position: relative;
 
+  @include g.mq(md) {
+    margin: 40px 60px 0;
+  }
+
   &::before {
     position: absolute;
     inset: 0;
@@ -24,6 +28,10 @@
   padding-block: 60px;
   position: relative;
   z-index: 2;
+
+  @include g.mq(md) {
+    padding-block: 127px;
+  }
 }
 
 .p-lower-top__ja {
@@ -31,6 +39,11 @@
   line-height: 1.5;
   font-size: 24px;
   letter-spacing: 4.8px;
+
+  @include g.mq(md) {
+    font-size: 32px;
+    letter-spacing: 3.2px;
+  }
 }
 
 .p-lower-top__en {
@@ -40,4 +53,10 @@
   letter-spacing: 1.2px;
   text-transform: uppercase;
   margin-top: 15px;
+
+  @include g.mq(md) {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    margin-top: 17px;
+  }
 }

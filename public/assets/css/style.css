@@ -1473,6 +1473,10 @@ body {
 	width: 24px;
 }
 
+.c-breadcrumb {
+	padding: 12px 90px 0;
+}
+
 .p-top-fv__inner {
 	padding-inline: 40px;
 }
@@ -1689,6 +1693,25 @@ body {
 .p-footer-copyright {
 	margin-top: 56px;
 	padding-block: 16px;
+}
+
+.p-lower-top {
+	margin: 40px 60px 0;
+}
+
+.p-lower-top__wrapper {
+	padding-block: 127px;
+}
+
+.p-lower-top__ja {
+	font-size: 32px;
+	letter-spacing: 3.2px;
+}
+
+.p-lower-top__en {
+	font-size: 14px;
+	letter-spacing: 1.4px;
+	margin-top: 17px;
 }
 
 }

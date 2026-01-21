@@ -2,6 +2,10 @@
 
 .c-breadcrumb {
   padding: 12px 20px 0;
+
+  @include g.mq(md) {
+    padding: 12px 90px 0;
+  }
 }
 
 .c-breadcrumb__list {
