@@ -1401,6 +1401,61 @@ body {
 	overflow: hidden;
 }
 
+.p-page-nav {
+	padding-block: 60px 100px;
+}
+
+.p-page-nav__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 82px;
+}
+
+.p-page-nav__title {
+	align-items: center;
+	display: flex;
+	font-size: 20px;
+	font-weight: 700;
+	gap: 23px;
+	letter-spacing: 1.6px;
+	line-height: 1.5;
+}
+
+.p-page-nav__label {
+	background: #1391e6;
+	border-radius: 24px;
+	color: #ffffff;
+	font-size: 14px;
+	letter-spacing: 1.12px;
+	line-height: 1.5;
+	padding: 6px 12px;
+}
+
+.p-page-nav__label--expense {
+	background: #ee5a6d;
+}
+
+.p-page-nav__list {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	margin-top: 32px;
+}
+
+.p-page-nav__link {
+	border: 1px solid #1391e6;
+	border-radius: 12px;
+	color: #1391e6;
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1.6px;
+	line-height: 1.5;
+	padding: 13px 18px;
+	text-align: center;
+	width: 100%;
+}
+
 .u-hidden-sp {
 	display: none;
 }
