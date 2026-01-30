@@ -1,0 +1,56 @@
+@use "../global/" as g;
+
+.p-page-nav {
+  padding-block: 60px 100px;
+}
+
+.p-page-nav__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+}
+
+.p-page-nav__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.p-page-nav__label {
+  color: g.$color-white;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 1.12px;
+  padding: 6px 12px;
+  background: g.$color-main;
+  border-radius: 24px;
+
+  &--expense {
+    background: g.$color-accent;
+  }
+}
+
+.p-page-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.p-page-nav__link {
+  display: block;
+  text-align: center;
+  color: g.$color-main;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+  padding: calc(15px - 2px) calc(20px - 2px);
+  width: 100%;
+  border: 1px solid g.$color-main;
+  border-radius: 12px;
+}
