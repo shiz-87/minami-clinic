@@ -1283,6 +1283,10 @@ body {
 	background: url(../img/sp/about-top.webp) no-repeat center center/cover;
 }
 
+.p-lower-top--medical {
+	background: url(../img/sp/medical-top.webp) no-repeat center center/cover;
+}
+
 .p-lower-top__wrapper {
 	color: #ffffff;
 	padding-block: 60px;
@@ -1774,6 +1778,10 @@ body {
 
 .p-lower-top--about {
 	background: url(../img//about-top.webp) no-repeat center center/cover;
+}
+
+.p-lower-top--medical {
+	background: url(../img//medical-top.webp) no-repeat center center/cover;
 }
 
 .p-lower-top__wrapper {
