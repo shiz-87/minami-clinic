@@ -1856,6 +1856,33 @@ body {
 	margin-top: 60px;
 }
 
+.p-page-nav {
+	padding-block: 80px 160px;
+}
+
+.p-page-nav__inner {
+	gap: 80px;
+}
+
+.p-page-nav__title {
+	font-size: 28px;
+	letter-spacing: 2.24px;
+}
+
+.p-page-nav__list {
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin-top: 30px;
+}
+
+.p-page-nav__link {
+	border: 2px solid #1391e6;
+	font-size: 24px;
+	letter-spacing: 1.92px;
+	padding: 16px 29px;
+}
+
 }
 
 @media screen and (min-width: 992px) {
