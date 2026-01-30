@@ -55,6 +55,7 @@
 
   @include g.mq(md) {
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
     gap: 16px;
     margin-top: 30px;
@@ -73,6 +74,8 @@
   width: 100%;
   border: 1px solid g.$color-main;
   border-radius: 12px;
+  position: relative;
+  transition: transform 0.3s;
 
   @include g.mq(md) {
     font-size: 24px;
@@ -80,4 +83,38 @@
     border: 2px solid g.$color-main;
     padding: calc(18px - 2px) calc(31px - 2px);
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid g.$color-main;
+    border-bottom: 2px solid g.$color-main;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    bottom: 12px;
+    opacity: 0;
+    transition:
+      opacity 0.3s,
+      bottom 0.3s;
+  }
+
+  &:hover {
+    background: g.$color-main-light;
+    transform: scale(0.98);
+
+    .p-page-nav__text {
+      transform: translateY(-8px);
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.p-page-nav__text {
+  display: block;
+  transition: transform 0.3s;
 }
