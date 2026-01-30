@@ -25,7 +25,16 @@
       background: url(../img//about-top.webp) no-repeat center center / cover;
     }
   }
+
+  &--medical {
+    background: url(../img/sp/medical-top.webp) no-repeat center center / cover;
+
+    @include g.mq(md) {
+      background: url(../img//medical-top.webp) no-repeat center center / cover;
+    }
+  }
 }
+
 .p-lower-top__wrapper {
   text-align: center;
   color: g.$color-white;

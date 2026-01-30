@@ -8,6 +8,14 @@
     padding-block: 15.8% 7.4%;
   }
 
+  &:nth-of-type(n + 2) {
+    margin-block: 97px 98px;
+
+    @include g.mq(md) {
+      margin-block: 163px 160px;
+    }
+  }
+
   &::before {
     position: absolute;
     top: 0;

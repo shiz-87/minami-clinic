@@ -2,12 +2,20 @@
 
 .p-page-nav {
   padding-block: 60px 100px;
+
+  @include g.mq(md) {
+    padding-block: 80px 160px;
+  }
 }
 
 .p-page-nav__inner {
   display: flex;
   flex-direction: column;
   gap: 82px;
+
+  @include g.mq(md) {
+    gap: 80px;
+  }
 }
 
 .p-page-nav__title {
@@ -18,6 +26,11 @@
   display: flex;
   align-items: center;
   gap: 23px;
+
+  @include g.mq(md) {
+    font-size: 28px;
+    letter-spacing: 2.24px;
+  }
 }
 
 .p-page-nav__label {
@@ -39,6 +52,14 @@
   flex-direction: column;
   gap: 18px;
   margin-top: 32px;
+
+  @include g.mq(md) {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 30px;
+  }
 }
 
 .p-page-nav__link {
@@ -53,4 +74,47 @@
   width: 100%;
   border: 1px solid g.$color-main;
   border-radius: 12px;
+  position: relative;
+  transition: transform 0.3s;
+
+  @include g.mq(md) {
+    font-size: 24px;
+    letter-spacing: 1.92px;
+    border: 2px solid g.$color-main;
+    padding: calc(18px - 2px) calc(31px - 2px);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid g.$color-main;
+    border-bottom: 2px solid g.$color-main;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    bottom: 12px;
+    opacity: 0;
+    transition:
+      opacity 0.3s,
+      bottom 0.3s;
+  }
+
+  &:hover {
+    background: g.$color-main-light;
+    transform: scale(0.98);
+
+    .p-page-nav__text {
+      transform: translateY(-8px);
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.p-page-nav__text {
+  display: block;
+  transition: transform 0.3s;
 }
