@@ -1559,6 +1559,7 @@ body {
 
 .p-medical__image img {
 	border-radius: 20px;
+	width: 100%;
 }
 
 .u-hidden-sp {
@@ -1737,7 +1738,7 @@ body {
 }
 
 .p-service:nth-of-type(n + 2) {
-	margin-top: 160px;
+	margin-block: 163px 160px;
 }
 
 .p-service::before {
@@ -1995,6 +1996,49 @@ body {
 	font-size: 24px;
 	letter-spacing: 1.92px;
 	padding: 16px 29px;
+}
+
+.p-medical {
+	margin-top: 60px;
+}
+
+.p-medical__list {
+	gap: 39px;
+}
+
+.p-medical__item {
+	padding: 60px;
+}
+
+.p-medical__heading {
+	align-items: center;
+	flex-direction: row;
+	gap: 38px;
+	padding-bottom: 36px;
+}
+
+.p-medical__title {
+	font-size: 28px;
+	letter-spacing: 2.24px;
+	line-height: 1.5;
+}
+
+.p-medical__badge {
+	top: -60px;
+}
+
+.p-medical__body {
+	flex-direction: row;
+	gap: 4.5454545455%;
+	margin-top: 36px;
+}
+
+.p-medical__text {
+	width: 47.7272727273%;
+}
+
+.p-medical__image {
+	width: 47.7272727273%;
 }
 
 }

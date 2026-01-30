@@ -12,7 +12,7 @@
     margin-block: 97px 98px;
 
     @include g.mq(md) {
-      margin-top: 160px;
+      margin-block: 163px 160px;
     }
   }
 
