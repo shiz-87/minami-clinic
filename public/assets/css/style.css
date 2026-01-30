@@ -880,6 +880,10 @@ body {
 	position: relative;
 }
 
+.p-service:nth-of-type(n + 2) {
+	margin-block: 97px 98px;
+}
+
 .p-service::before {
 	aspect-ratio: 375/88;
 	background: url(../img/sp/top-service-bg-top.svg) no-repeat center/contain;
@@ -1494,6 +1498,69 @@ body {
 	transition: transform 0.3s;
 }
 
+.p-medical {
+	margin-top: 40px;
+}
+
+.p-medical__list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.p-medical__item {
+	background: #ffffff;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.p-medical__header {
+	position: relative;
+}
+
+.p-medical__heading {
+	border-bottom: 1px solid #888888;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-bottom: 18px;
+}
+
+.p-medical__title {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1.6px;
+	line-height: 1.4;
+}
+
+.p-medical__subtitle {
+	color: #1391e6;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1.12px;
+}
+
+.p-medical__badge {
+	position: absolute;
+	right: 0;
+	top: -20px;
+}
+
+.p-medical__body {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.p-medical__text p:nth-of-type(n + 2) {
+	margin-top: 24px;
+}
+
+.p-medical__image img {
+	border-radius: 20px;
+}
+
 .u-hidden-sp {
 	display: none;
 }
@@ -1667,6 +1734,10 @@ body {
 
 .p-service {
 	padding-block: 15.8% 7.4%;
+}
+
+.p-service:nth-of-type(n + 2) {
+	margin-top: 160px;
 }
 
 .p-service::before {
