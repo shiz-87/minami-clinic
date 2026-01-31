@@ -1,0 +1,90 @@
+@use "../global/" as g;
+
+.p-greeting {
+  padding-block: 60px 100px;
+
+  @include g.mq(md) {
+    padding-block: 80px 160px;
+  }
+}
+
+.p-greeting__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include g.mq(md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 80px;
+    margin-top: 60px;
+  }
+}
+
+.p-greeting__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+  margin-top: 40px;
+
+  @include g.mq(md) {
+    font-size: 28px;
+    letter-spacing: 2.24px;
+    margin-top: 0;
+  }
+}
+
+.p-greeting__content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+
+  @include g.mq(md) {
+    margin-top: 40px;
+  }
+}
+
+.p-greeting__signature {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.p-greeting__image {
+  text-align: center;
+
+  @include g.mq(md) {
+    grid-row: span 2;
+  }
+}
+
+.p-greeting__profile {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.p-greeting__history {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.p-greeting__wrapper {
+  display: flex;
+  gap: 14px;
+
+  dt {
+    width: 50px;
+    flex-shrink: 0;
+  }
+}
+
+.p-greeting__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 14px;
+}

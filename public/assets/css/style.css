@@ -386,6 +386,13 @@ body {
 	opacity: 0.7;
 }
 
+.c-heading-underline {
+	border-bottom: 1px solid currentColor;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-bottom: 6px;
+}
+
 .p-header-nav__list {
 	display: flex;
 	gap: 24px;
@@ -1296,6 +1303,10 @@ body {
 	background: url(../img/sp/medical-top.webp) no-repeat center center/cover;
 }
 
+.p-lower-top--staff {
+	background: url(../img/sp/staff-top.webp) no-repeat center center/cover;
+}
+
 .p-lower-top__wrapper {
 	color: #ffffff;
 	padding-block: 60px;
@@ -1565,6 +1576,70 @@ body {
 .p-medical__image img {
 	border-radius: 20px;
 	width: 100%;
+}
+
+.p-greeting {
+	padding-block: 60px 100px;
+}
+
+.p-greeting__container {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.p-greeting__title {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1.6px;
+	line-height: 1.5;
+	margin-top: 40px;
+}
+
+.p-greeting__content {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin-top: 20px;
+}
+
+.p-greeting__signature {
+	align-self: flex-end;
+	text-align: right;
+}
+
+.p-greeting__image {
+	text-align: center;
+}
+
+.p-greeting__profile {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.p-greeting__history {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin-top: 14px;
+}
+
+.p-greeting__wrapper {
+	display: flex;
+	gap: 14px;
+}
+
+.p-greeting__wrapper dt {
+	flex-shrink: 0;
+	width: 50px;
+}
+
+.p-greeting__list {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin-top: 14px;
 }
 
 .u-hidden-sp {
@@ -1892,7 +1967,11 @@ body {
 }
 
 .p-lower-top--medical {
-	background: url(../img//medical-top.webp) no-repeat center center/cover;
+	background: url(../img/medical-top.webp) no-repeat center center/cover;
+}
+
+.p-lower-top--staff {
+	background: url(../img/staff-top.webp) no-repeat center center/cover;
 }
 
 .p-lower-top__wrapper {
@@ -2044,6 +2123,31 @@ body {
 
 .p-medical__image {
 	width: 47.7272727273%;
+}
+
+.p-greeting {
+	padding-block: 80px 160px;
+}
+
+.p-greeting__container {
+	display: grid;
+	gap: 60px 80px;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 60px;
+}
+
+.p-greeting__title {
+	font-size: 28px;
+	letter-spacing: 2.24px;
+	margin-top: 0;
+}
+
+.p-greeting__content {
+	margin-top: 40px;
+}
+
+.p-greeting__image {
+	grid-row: span 2;
 }
 
 }
