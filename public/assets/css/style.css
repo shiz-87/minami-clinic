@@ -47,6 +47,10 @@ figcaption {
 	display: block;
 }
 
+figure {
+	margin: 0;
+}
+
 ol,
 ul {
 	list-style: none;
@@ -1657,6 +1661,62 @@ body {
 
 .p-staff-gallery__wrapper {
 	transition-timing-function: linear;
+}
+
+.p-staff-intro {
+	padding-block: 100px;
+}
+
+.p-staff-intro__group {
+	margin-top: 40px;
+}
+
+.p-staff-intro__list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 40px;
+}
+
+.p-staff-card__image img {
+	width: 100%;
+}
+
+.p-staff-card__name {
+	align-items: center;
+	display: flex;
+	font-size: 18px;
+	font-weight: 700;
+	gap: 12px;
+	justify-content: center;
+	letter-spacing: 1.44px;
+	line-height: 1.5;
+	margin-top: 15px;
+}
+
+.p-staff-card__position {
+	font-size: 12px;
+	letter-spacing: 0.96px;
+}
+
+.p-staff-card__meta {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	margin-top: 15px;
+}
+
+.p-staff-card__row {
+	align-items: center;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 140px 1fr;
+	line-height: 1.5;
+}
+
+.p-staff-card__row dt {
+	background: #dff1fd;
+	padding: 17px 20px;
 }
 
 .u-hidden-sp {

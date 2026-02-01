@@ -1,0 +1,44 @@
+@use "../global/" as g;
+
+.p-staff-card__image {
+  img {
+    width: 100%;
+  }
+}
+
+.p-staff-card__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.44px;
+  margin-top: 15px;
+}
+
+.p-staff-card__position {
+  font-size: 12px;
+  letter-spacing: 0.96px;
+}
+
+.p-staff-card__meta {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.p-staff-card__row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  align-items: center;
+  line-height: 1.5;
+
+  dt {
+    background: g.$color-main-light;
+    padding: 17px 20px;
+  }
+}

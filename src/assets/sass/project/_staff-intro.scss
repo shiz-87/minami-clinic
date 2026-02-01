@@ -1,0 +1,16 @@
+@use "../global/" as g;
+
+.p-staff-intro {
+  padding-block: 100px;
+}
+
+.p-staff-intro__group {
+  margin-top: 40px;
+}
+
+.p-staff-intro__list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
