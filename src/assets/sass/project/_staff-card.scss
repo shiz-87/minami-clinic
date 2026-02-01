@@ -1,6 +1,13 @@
 @use "../global/" as g;
 
 .p-staff-card__image {
+  max-width: 460px;
+  margin-inline: auto;
+
+  @include g.mq(md) {
+    max-width: 280px;
+  }
+
   img {
     width: 100%;
   }
@@ -16,6 +23,10 @@
   line-height: 1.5;
   letter-spacing: 1.44px;
   margin-top: 15px;
+
+  @include g.mq(md) {
+    margin-top: 14px;
+  }
 }
 
 .p-staff-card__position {
@@ -34,11 +45,17 @@
   display: grid;
   grid-template-columns: 140px 1fr;
   gap: 20px;
-  align-items: center;
+  align-items: stretch;
   line-height: 1.5;
 
   dt {
     background: g.$color-main-light;
     padding: 17px 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  dd {
+    padding-block: 17px;
   }
 }

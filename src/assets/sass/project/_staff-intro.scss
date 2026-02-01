@@ -2,10 +2,18 @@
 
 .p-staff-intro {
   padding-block: 100px;
+
+  @include g.mq(md) {
+    padding-block: 160px;
+  }
 }
 
 .p-staff-intro__group {
-  margin-top: 40px;
+  margin-top: 39px;
+
+  @include g.mq(md) {
+    margin-top: 60px;
+  }
 }
 
 .p-staff-intro__list {
@@ -13,4 +21,14 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @include g.mq(md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 80px;
+  }
+
+  @include g.mq(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
