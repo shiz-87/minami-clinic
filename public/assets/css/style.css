@@ -1642,6 +1642,23 @@ body {
 	margin-top: 14px;
 }
 
+.p-staff-gallery__slide {
+	aspect-ratio: 151/114;
+	height: auto;
+	width: 200px;
+}
+
+.p-staff-gallery__slide img {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.p-staff-gallery__wrapper {
+	transition-timing-function: linear;
+}
+
 .u-hidden-sp {
 	display: none;
 }
@@ -2148,6 +2165,10 @@ body {
 
 .p-greeting__image {
 	grid-row: span 2;
+}
+
+.p-staff-gallery__slide {
+	width: 305px;
 }
 
 }

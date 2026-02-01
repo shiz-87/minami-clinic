@@ -30,4 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".p-top-fv__button-prev",
     },
   });
+
+  // スタッフページ用のSwiperの初期化
+  const staffGallerySwiper = new Swiper(".p-staff-gallery__swiper", {
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    centeredSlides: true,
+    speed: 6000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+  });
 });
