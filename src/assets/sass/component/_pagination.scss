@@ -1,0 +1,45 @@
+@use "../global/" as g;
+
+.c-pagination {
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    background: g.$color-white;
+    border: 1px solid g.$color-main;
+    border-radius: 4px;
+    color: g.$color-main;
+
+    &.current {
+      background: g.$color-main;
+      color: g.$color-white;
+    }
+
+    &.next {
+      background: g.$color-main;
+      color: g.$color-white;
+      padding: 5px 14px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      &::after {
+        content: "";
+        background: url(../img/icon-arrow-right-circle.svg) no-repeat center /
+          contain;
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}

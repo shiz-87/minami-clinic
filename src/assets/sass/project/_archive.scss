@@ -1,0 +1,13 @@
+@use "../global" as g;
+
+.p-archive {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.p-archive__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
