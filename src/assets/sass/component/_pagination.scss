@@ -19,6 +19,9 @@
     border: 1px solid g.$color-main;
     border-radius: 4px;
     color: g.$color-main;
+    transition:
+      background 0.3s,
+      color 0.3s;
 
     @include g.mq(md) {
       font-size: 14px;
@@ -28,6 +31,13 @@
     &.current {
       background: g.$color-main;
       color: g.$color-white;
+    }
+
+    &:not(.current) {
+      &:hover {
+        background: g.$color-main;
+        color: g.$color-white;
+      }
     }
 
     &.next {
@@ -49,10 +59,17 @@
           contain;
         width: 14px;
         height: 14px;
+        transition: transform 0.3s;
 
         @include g.mq(md) {
           width: 16px;
           height: 16px;
+        }
+      }
+
+      &:hover {
+        &::after {
+          transform: translateX(6px);
         }
       }
     }

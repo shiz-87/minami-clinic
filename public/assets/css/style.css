@@ -431,9 +431,15 @@ body {
 	justify-content: center;
 	line-height: 1.5;
 	padding: 5px 10px;
+	transition: background 0.3s, color 0.3s;
 }
 
 .c-pagination .page-numbers.current {
+	background: #1391e6;
+	color: #ffffff;
+}
+
+.c-pagination .page-numbers:not(.current):hover {
 	background: #1391e6;
 	color: #ffffff;
 }
@@ -451,7 +457,12 @@ body {
 	background: url(../img/icon-arrow-right-circle.svg) no-repeat center/contain;
 	content: "";
 	height: 14px;
+	transition: transform 0.3s;
 	width: 14px;
+}
+
+.c-pagination .page-numbers.next:hover::after {
+	transform: translateX(6px);
 }
 
 .c-sidebar-title {
@@ -1859,6 +1870,7 @@ body {
 	color: #1391e6;
 	display: flex;
 	line-height: 1.5;
+	transition: opacity 0.3s;
 }
 
 .p-clinic__link::after {
@@ -1866,6 +1878,10 @@ body {
 	content: "";
 	height: 18px;
 	width: 18px;
+}
+
+.p-clinic__link:hover {
+	opacity: 0.7;
 }
 
 .p-new-posts__list {
