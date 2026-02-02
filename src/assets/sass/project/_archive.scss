@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @include g.mq(md) {
+    gap: 100px;
+  }
 }
 
 .p-archive__list {

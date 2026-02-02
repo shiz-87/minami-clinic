@@ -20,6 +20,11 @@
     border-radius: 4px;
     color: g.$color-main;
 
+    @include g.mq(md) {
+      font-size: 14px;
+      padding: 6px 13px;
+    }
+
     &.current {
       background: g.$color-main;
       color: g.$color-white;
@@ -33,12 +38,22 @@
       align-items: center;
       gap: 4px;
 
+      @include g.mq(md) {
+        gap: 10px;
+        padding: 6px 13px;
+      }
+
       &::after {
         content: "";
         background: url(../img/icon-arrow-right-circle.svg) no-repeat center /
           contain;
         width: 14px;
         height: 14px;
+
+        @include g.mq(md) {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
   }

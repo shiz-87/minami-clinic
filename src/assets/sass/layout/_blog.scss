@@ -2,16 +2,35 @@
 
 .l-blog {
   padding-block: 59px 100px;
+
+  @include g.mq(md) {
+    padding-block: 80px 160px;
+  }
 }
 
 .l-blog__inner {
   display: flex;
   flex-direction: column;
   gap: 100px;
+
+  @include g.mq(md) {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .l-blog__side {
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @include g.mq(md) {
+    max-width: 300px;
+  }
+}
+
+.l-blog__content {
+  @include g.mq(md) {
+    flex: 1;
+  }
 }
