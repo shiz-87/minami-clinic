@@ -3,3 +3,15 @@
 .l-blog {
   padding-block: 59px 100px;
 }
+
+.l-blog__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.l-blog__side {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}

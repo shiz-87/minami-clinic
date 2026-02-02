@@ -1,0 +1,30 @@
+@use "../global/" as g;
+
+.c-sidebar-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid g.$color-text;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+  }
+
+  &__clinic::before {
+    background: url(../img/icon-sidebar-clinic.svg) no-repeat center / contain;
+  }
+
+  &__new-post::before {
+    background: url(../img/icon-sidebar-news.svg) no-repeat center / contain;
+  }
+
+  &__category::before {
+    background: url(../img/icon-sidebar-category.svg) no-repeat center / contain;
+  }
+}

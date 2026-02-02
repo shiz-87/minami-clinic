@@ -393,7 +393,7 @@
       </nav>
 
       <section class="l-blog">
-        <div class="l-inner">
+        <div class="l-blog__inner l-inner">
           <!-- ブログ一覧 -->
           <div class="l-blog__content">
             <div class="p-archive">
@@ -704,12 +704,184 @@
 
           <aside class="l-blog__side p-sidebar">
             <!-- クリニックの紹介 -->
-            <section class="p-sidebar__clinic"></section>
+            <section class="p-sidebar__clinic p-clinic">
+              <h2 class="c-sidebar-title c-sidebar-title__clinic">
+                クリニックの紹介
+              </h2>
+              <div class="p-clinic__image">
+                <img
+                  src="./assets/img/sidebar-clinic.png"
+                  alt=""
+                  width="335"
+                  height="210"
+                />
+              </div>
+              <div class="p-clinic__content">
+                <h3 class="p-clinic__title">みなみ歯科クリニック</h3>
+                <p class="p-clinic__text">
+                  お子様からご高齢の方まで、快適な空間で治療が受けられる場を作り、地域医療に貢献しきたいと考えております。
+                </p>
+                <a href="" class="p-clinic__link">当院について</a>
+              </div>
+            </section>
             <!-- /クリニックの紹介 -->
 
             <!-- 新着記事 -->
+            <section class="p-sidebar__new-post p-new-posts">
+              <h2 class="c-sidebar-title c-sidebar-title__new-post">
+                新着記事
+              </h2>
 
+              <ul class="p-new-posts__list">
+                <li class="p-new-posts__item">
+                  <article class="p-blog-card">
+                    <a href="#" class="p-blog-card__link">
+                      <div class="p-blog-card__thumbnail">
+                        <picture>
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="./assets/img/top-blog-01.webp"
+                            width="600"
+                            height="376"
+                          />
+                          <img
+                            src="./assets/img/sp/top-blog-01.webp"
+                            alt=""
+                            width="266"
+                            height="202"
+                          />
+                        </picture>
+                      </div>
+                      <div class="p-blog-card__body">
+                        <span class="p-blog-card__label">歯科コラム</span>
+                        <h3 class="p-blog-card__title">
+                          歯周病と虫歯の違いを詳しく解説
+                        </h3>
+                        <time class="p-blog-card__date" datetime="2024-12-12"
+                          >2024.12.12</time
+                        >
+                      </div>
+                    </a>
+                  </article>
+                </li>
+
+                <li class="p-new-posts__item">
+                  <article class="p-blog-card">
+                    <a href="#" class="p-blog-card__link">
+                      <div class="p-blog-card__thumbnail">
+                        <picture>
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="./assets/img/top-blog-02.webp"
+                            width="600"
+                            height="376"
+                          />
+                          <img
+                            src="./assets/img/sp/top-blog-02.webp"
+                            alt=""
+                            width="266"
+                            height="202"
+                          />
+                        </picture>
+                      </div>
+                      <div class="p-blog-card__body">
+                        <span class="p-blog-card__label">患者様の声</span>
+                        <h3 class="p-blog-card__title">
+                          インプラント治療で噛む力が戻った！実際の体験談（50代女性）
+                        </h3>
+                        <time class="p-blog-card__date" datetime="2024-12-02"
+                          >2024.12.02</time
+                        >
+                      </div>
+                    </a>
+                  </article>
+                </li>
+
+                <li class="p-new-posts__item">
+                  <article class="p-blog-card">
+                    <a href="#" class="p-blog-card__link">
+                      <div class="p-blog-card__thumbnail">
+                        <picture>
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="./assets/img/top-blog-03.webp"
+                            width="600"
+                            height="376"
+                          />
+                          <img
+                            src="./assets/img/sp/top-blog-03.webp"
+                            alt=""
+                            width="266"
+                            height="202"
+                          />
+                        </picture>
+                      </div>
+                      <div class="p-blog-card__body">
+                        <span class="p-blog-card__label">小児歯科</span>
+                        <h3 class="p-blog-card__title">
+                          子どもの歯の健康を守るために知っておきたい！年齢別に見る最適な歯磨きの方法と正しいケアのタイミング、親が実践すべき注意点とは
+                        </h3>
+                        <time class="p-blog-card__date" datetime="2024-11-22"
+                          >2024.11.22</time
+                        >
+                      </div>
+                    </a>
+                  </article>
+                </li>
+
+                <li class="p-new-posts__item">
+                  <article class="p-blog-card">
+                    <a href="#" class="p-blog-card__link">
+                      <div class="p-blog-card__thumbnail">
+                        <picture>
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="./assets/img/top-blog-04.webp"
+                            width="600"
+                            height="376"
+                          />
+                          <img
+                            src="./assets/img/sp/top-blog-04.webp"
+                            alt=""
+                            width="266"
+                            height="202"
+                          />
+                        </picture>
+                      </div>
+                      <div class="p-blog-card__body">
+                        <span class="p-blog-card__label">歯科コラム</span>
+                        <h3 class="p-blog-card__title">
+                          インプラントとブリッジの違いとは？どちらが最適？
+                        </h3>
+                        <time class="p-blog-card__date" datetime="2024-11-10"
+                          >2024.11.10</time
+                        >
+                      </div>
+                    </a>
+                  </article>
+                </li>
+              </ul>
+            </section>
             <!-- /新着記事 -->
+
+            <!-- カテゴリー -->
+            <section class="p-category">
+              <h2 class="c-sidebar-title c-sidebar-title__category">
+                カテゴリー
+              </h2>
+              <ul class="p-category__list">
+                <li class="p-category__item">
+                  <a class="c-btn-arrow-blue" href="#">歯科コラム</a>
+                </li>
+                <li class="p-category__item">
+                  <a class="c-btn-arrow-blue" href="#">患者様の声</a>
+                </li>
+                <li class="p-category__item">
+                  <a class="c-btn-arrow-blue" href="#">小児歯科</a>
+                </li>
+              </ul>
+            </section>
+            <!-- /カテゴリー -->
           </aside>
         </div>
       </section>
@@ -820,10 +992,10 @@
               <span class="p-footer-nav__title">当院について</span>
               <ul class="p-footer-nav__sub">
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">ポリシーと特徴</a>
+                  <a class="c-btn-arrow-blue" href="#">ポリシーと特徴</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">当院の様子</a>
+                  <a class="c-btn-arrow-blue" href="#">当院の様子</a>
                 </li>
               </ul>
             </li>
@@ -832,13 +1004,13 @@
               <span class="p-footer-nav__title">スタッフ紹介</span>
               <ul class="p-footer-nav__sub">
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">院長のあいさつ</a>
+                  <a class="c-btn-arrow-blue" href="#">院長のあいさつ</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">スタッフ</a>
+                  <a class="c-btn-arrow-blue" href="#">スタッフ</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">スタッフブログ</a>
+                  <a class="c-btn-arrow-blue" href="#">スタッフブログ</a>
                 </li>
               </ul>
             </li>
@@ -847,28 +1019,28 @@
               <span class="p-footer-nav__title">診療内容</span>
               <ul class="p-footer-nav__sub">
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">一般歯科</a>
+                  <a class="c-btn-arrow-blue" href="#">一般歯科</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">入れ歯</a>
+                  <a class="c-btn-arrow-blue" href="#">入れ歯</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">小児歯科</a>
+                  <a class="c-btn-arrow-blue" href="#">小児歯科</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">矯正歯科</a>
+                  <a class="c-btn-arrow-blue" href="#">矯正歯科</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">予防歯科</a>
+                  <a class="c-btn-arrow-blue" href="#">予防歯科</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">ホワイトニング</a>
+                  <a class="c-btn-arrow-blue" href="#">ホワイトニング</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">口腔外科</a>
+                  <a class="c-btn-arrow-blue" href="#">口腔外科</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">レーザー治療</a>
+                  <a class="c-btn-arrow-blue" href="#">レーザー治療</a>
                 </li>
               </ul>
             </li>
@@ -877,10 +1049,10 @@
               <span class="p-footer-nav__title">お問い合わせ</span>
               <ul class="p-footer-nav__sub">
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">お問い合わせフォーム</a>
+                  <a class="c-btn-arrow-blue" href="#">お問い合わせフォーム</a>
                 </li>
                 <li class="p-footer-nav__sub-item">
-                  <a href="#">WEB予約</a>
+                  <a class="c-btn-arrow-blue" href="#">WEB予約</a>
                 </li>
               </ul>
             </li>

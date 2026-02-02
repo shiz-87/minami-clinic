@@ -1,0 +1,33 @@
+@use "../global/" as g;
+
+.p-clinic__image {
+  margin-top: 20px;
+}
+
+.p-clinic__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.p-clinic__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.p-clinic__link {
+  color: g.$color-main;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    background: url(../img/icon-arrow-right-clinic.svg) no-repeat center /
+      contain;
+    width: 18px;
+    height: 18px;
+  }
+}
