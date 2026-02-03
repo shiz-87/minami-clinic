@@ -414,7 +414,7 @@ body {
 	padding-bottom: 6px;
 }
 
-.c-pagination .nav-links {
+.c-pagination {
 	align-items: center;
 	display: flex;
 	gap: 10px;
@@ -440,12 +440,14 @@ body {
 	color: #ffffff;
 }
 
-.c-pagination .page-numbers:not(.current):hover {
+.c-pagination .page-numbers:not(.current,
+.dots):hover {
 	background: #1391e6;
 	color: #ffffff;
 }
 
-.c-pagination .page-numbers.next {
+.c-pagination .page-numbers.next,
+.c-pagination .page-numbers.prev {
 	align-items: center;
 	background: #1391e6;
 	color: #ffffff;
@@ -464,6 +466,18 @@ body {
 
 .c-pagination .page-numbers.next:hover::after {
 	transform: translateX(6px);
+}
+
+.c-pagination .page-numbers.prev::before {
+	background: url(../img/icon-arrow-left-circle.svg) no-repeat center/contain;
+	content: "";
+	height: 14px;
+	transition: transform 0.3s;
+	width: 14px;
+}
+
+.c-pagination .page-numbers.prev:hover::before {
+	transform: translateX(-6px);
 }
 
 .c-sidebar-title {
@@ -2341,12 +2355,18 @@ body {
 	padding: 6px 13px;
 }
 
-.c-pagination .page-numbers.next {
+.c-pagination .page-numbers.next,
+.c-pagination .page-numbers.prev {
 	gap: 10px;
 	padding: 6px 13px;
 }
 
 .c-pagination .page-numbers.next::after {
+	height: 16px;
+	width: 16px;
+}
+
+.c-pagination .page-numbers.prev::before {
 	height: 16px;
 	width: 16px;
 }
