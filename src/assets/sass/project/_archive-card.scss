@@ -73,6 +73,7 @@
   line-height: 1.5;
   margin-top: 6px;
   transition: color 0.3s;
+  min-height: 42px;
 
   @include g.mq(md) {
     font-size: 16px;
