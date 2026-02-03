@@ -1,0 +1,33 @@
+@use "../global/" as g;
+
+.c-btn-pagination {
+  padding: 9px 13px;
+  border-radius: 4px;
+  border: 1px solid g.$color-main;
+  color: g.$color-main;
+  font-size: 12px;
+  line-height: 1.5;
+
+  &--prev {
+    background: g.$color-main;
+    color: g.$color-white;
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      background: url(../img/icon-arrow-left-circle.svg) no-repeat center /
+        contain;
+    }
+  }
+
+  &--list {
+    color: g.$color-main;
+  }
+}

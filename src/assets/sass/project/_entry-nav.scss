@@ -1,0 +1,8 @@
+@use "../global/" as g;
+
+.p-entry-nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 5px;
+}
