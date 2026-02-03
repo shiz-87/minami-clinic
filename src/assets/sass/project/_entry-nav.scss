@@ -1,0 +1,13 @@
+@use "../global/" as g;
+
+.p-entry-nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 324px;
+  margin-inline: auto;
+
+  @include g.mq(md) {
+    max-width: 352px;
+  }
+}
