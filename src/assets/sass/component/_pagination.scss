@@ -1,12 +1,10 @@
 @use "../global/" as g;
 
 .c-pagination {
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
   .page-numbers {
     display: flex;
@@ -33,14 +31,15 @@
       color: g.$color-white;
     }
 
-    &:not(.current) {
+    &:not(.current, .dots) {
       &:hover {
         background: g.$color-main;
         color: g.$color-white;
       }
     }
 
-    &.next {
+    &.next,
+    &.prev {
       background: g.$color-main;
       color: g.$color-white;
       padding: 5px 14px;
@@ -52,7 +51,9 @@
         gap: 10px;
         padding: 6px 13px;
       }
+    }
 
+    &.next {
       &::after {
         content: "";
         background: url(../img/icon-arrow-right-circle.svg) no-repeat center /
@@ -70,6 +71,28 @@
       &:hover {
         &::after {
           transform: translateX(6px);
+        }
+      }
+    }
+
+    &.prev {
+      &::before {
+        content: "";
+        background: url(../img/icon-arrow-left-circle.svg) no-repeat center /
+          contain;
+        width: 14px;
+        height: 14px;
+        transition: transform 0.3s;
+
+        @include g.mq(md) {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          transform: translateX(-6px);
         }
       }
     }
