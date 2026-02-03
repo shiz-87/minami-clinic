@@ -541,11 +541,22 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	transition: transform 0.3s;
 	width: 16px;
+}
+
+.c-btn-pagination--prev:hover::before {
+	transform: translateX(-6px) translateY(-50%);
 }
 
 .c-btn-pagination--list {
 	color: #1391e6;
+	transition: background 0.3s, color 0.3s;
+}
+
+.c-btn-pagination--list:hover {
+	background: #1391e6;
+	color: #ffffff;
 }
 
 .p-header-nav__list {
@@ -2185,7 +2196,8 @@ body {
 	align-items: center;
 	display: flex;
 	gap: 10px;
-	margin-left: 5px;
+	margin-inline: auto;
+	max-width: 324px;
 }
 
 .u-hidden-sp {
@@ -2312,6 +2324,16 @@ body {
 .c-pagination .page-numbers.next::after {
 	height: 16px;
 	width: 16px;
+}
+
+.c-entry-title {
+	font-size: 28px;
+	letter-spacing: 2.24px;
+}
+
+.c-btn-pagination {
+	font-size: 14px;
+	padding-block: 6px;
 }
 
 .p-top-fv__inner {
@@ -2793,6 +2815,30 @@ body {
 .p-sidebar-card__thumbnail {
 	aspect-ratio: 120/90;
 	width: 40%;
+}
+
+.p-blog-detail__body > h2 {
+	font-size: 24px;
+	letter-spacing: 1.92px;
+}
+
+.p-blog-detail__body > h3 {
+	font-size: 20px;
+	letter-spacing: 1.6px;
+	margin-top: 30px;
+}
+
+.p-blog-detail__body > h4 {
+	font-size: 16px;
+	letter-spacing: 1.28px;
+}
+
+.p-blog-detail__nav {
+	margin-top: 73px;
+}
+
+.p-entry-nav__inner {
+	max-width: 352px;
 }
 
 }

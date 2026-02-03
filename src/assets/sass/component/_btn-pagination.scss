@@ -8,6 +8,11 @@
   font-size: 12px;
   line-height: 1.5;
 
+  @include g.mq(md) {
+    font-size: 14px;
+    padding-block: 6px;
+  }
+
   &--prev {
     background: g.$color-main;
     color: g.$color-white;
@@ -24,10 +29,25 @@
       height: 16px;
       background: url(../img/icon-arrow-left-circle.svg) no-repeat center /
         contain;
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      &::before {
+        transform: translateX(-6px) translateY(-50%);
+      }
     }
   }
 
   &--list {
     color: g.$color-main;
+    transition:
+      background 0.3s,
+      color 0.3s;
+
+    &:hover {
+      background: g.$color-main;
+      color: g.$color-white;
+    }
   }
 }

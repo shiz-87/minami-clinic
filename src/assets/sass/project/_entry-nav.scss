@@ -4,5 +4,10 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 5px;
+  max-width: 324px;
+  margin-inline: auto;
+
+  @include g.mq(md) {
+    max-width: 352px;
+  }
 }

@@ -48,6 +48,11 @@
     position: relative;
     margin-top: 29px;
 
+    @include g.mq(md) {
+      font-size: 24px;
+      letter-spacing: 1.92px;
+    }
+
     &:nth-child(1) {
       margin-top: 0;
     }
@@ -72,6 +77,12 @@
     padding-bottom: 4px;
     border-bottom: 1px solid g.$color-main;
     margin-top: 29px;
+
+    @include g.mq(md) {
+      font-size: 20px;
+      letter-spacing: 1.6px;
+      margin-top: 30px;
+    }
   }
 
   > h4 {
@@ -81,6 +92,11 @@
     line-height: 1.5;
     letter-spacing: 1.12px;
     margin-top: 29px;
+
+    @include g.mq(md) {
+      font-size: 16px;
+      letter-spacing: 1.28px;
+    }
   }
 
   > p {
@@ -111,4 +127,8 @@
 
 .p-blog-detail__nav {
   margin-top: 40px;
+
+  @include g.mq(md) {
+    margin-top: 73px;
+  }
 }
