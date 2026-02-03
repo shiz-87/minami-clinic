@@ -374,7 +374,8 @@ body {
 
 .c-breadcrumb__list {
 	display: flex;
-	flex-wrap: wrap;
+	overflow-x: auto;
+	white-space: nowrap;
 }
 
 .c-breadcrumb__item {
