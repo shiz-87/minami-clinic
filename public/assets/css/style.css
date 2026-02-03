@@ -2025,6 +2025,7 @@ body {
 	line-clamp: 2;
 	line-height: 1.5;
 	margin-top: 6px;
+	min-height: 42px;
 	overflow: hidden;
 	transition: color 0.3s;
 }
