@@ -3,8 +3,9 @@
 .p-entry-nav__inner {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
   max-width: 324px;
+  justify-content: center;
   margin-inline: auto;
 
   @include g.mq(md) {
