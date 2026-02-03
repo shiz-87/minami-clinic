@@ -1,7 +1,7 @@
 @use "../global/" as g;
 
 .c-btn-pagination {
-  padding: 9px 13px;
+  padding: 9px 12px;
   border-radius: 4px;
   border: 1px solid g.$color-main;
   color: g.$color-main;
@@ -35,6 +35,32 @@
     &:hover {
       &::before {
         transform: translateX(-6px) translateY(-50%);
+      }
+    }
+  }
+
+  &--next {
+    background: g.$color-main;
+    color: g.$color-white;
+    position: relative;
+    padding-right: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      background: url(../img/icon-arrow-right-circle.svg) no-repeat center /
+        contain;
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        transform: translateX(6px) translateY(-50%);
       }
     }
   }

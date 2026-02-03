@@ -1,5 +1,11 @@
 @use "../global/" as g;
 
+.u-hidden-320 {
+  @media screen and (max-width: 363px) {
+    display: none;
+  }
+}
+
 .u-hidden-sp {
   display: none;
 
